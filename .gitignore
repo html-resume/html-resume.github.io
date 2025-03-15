@@ -1,0 +1,6 @@
+src
+archive
+node_modules
+.temp
+# Copy-Item -Path .\src\* -Destination D:\backup\ -Recurse -Force; Copy-Item -Path .\src\* -Destination .\docs\ -Recurse -Force; Get-ChildItem -Path .\docs\*.jsx -File | ForEach-Object { $basename = $_.BaseName; esbuild $_.FullName --outfile=".\docs\$basename.js"; javascript-obfuscator ".\docs\$basename.js" --output .\docs --config config.json; Remove-Item $_.FullName; terser ".\docs\$basename.js" --compress --mangle --output ".\docs\$basename.min.js"; Remove-Item ".\docs\$basename.js"; Move-Item ".\docs\$basename.min.js" $_.FullName }
+# git config --global user.name "whatever" && git config --global user.email "whatever" && rm -r -fo .git && git init && git checkout -b main && git remote add origin https://github.com/html-resume/html-resume.github.io.git && git add . && git commit -m m && git push origin main --force
