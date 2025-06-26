@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Uncomment the following line to use Tailwind CSS -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            /* 210 * 96 / 25.4 px */
+            padding: calc(96 / 25.4 * 1rem);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .job-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body class="container">
+    <div class="">
+        <h1>John Doe</h1>
+        <p>Web Developer | john.doe@email.com | (123) 456-7890</p>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Experienced web developer with a passion for creating responsive, user-friendly websites.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="job">
+                <div class="job-title">Senior Web Developer - ABC Company</div>
+                <div class="job-date">Jan 2020 - Present</div>
+                <ul>
+                    <li>Developed and maintained multiple client websites</li>
+                    <li>Implemented responsive design principles</li>
+                    <li>Collaborated with design team to create user interfaces</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Web Developer - XYZ Agency</div>
+                <div class="job-date">Jun 2017 - Dec 2019</div>
+                <ul>
+                    <li>Built and maintained client websites using HTML, CSS, and JavaScript</li>
+                    <li>Optimized sites for maximum speed and performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="job">
+                <div class="job-title">BS Computer Science - University of Technology</div>
+                <div class="job-date">2013 - 2017</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Vue.js</li>
+                <li>Node.js, Express</li>
+                <li>MongoDB, MySQL</li>
+                <li>Git, GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- This is how the page breaks and the next page starts -->
+    <!-- <div style="page-break-before: always;"></div> -->
+
+</body>
+
+</html>
